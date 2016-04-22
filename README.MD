@@ -1,4 +1,3 @@
-
   #========================================#
   # LogRhythm -- Security Operations       #
   # Endpoint Lockdown SmartResponse        #
