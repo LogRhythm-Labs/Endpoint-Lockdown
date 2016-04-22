@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="Endpoint Lockdown">
+  <remv1:Action Name="Quarantine Endpoint : Prevent Malware Outbreak" Command="powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="./lockdown.ps1 -noprofile -remote" Order="1" />
+    <remv1:StringParameter Name="Target Host" Switch="-target" Order="2">
+      <remv1:DefaultInput>
+        <remv1:DHostIP />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Privileged Username" Switch="-username" Order="3">
+    </remv1:StringParameter>
+    <remv1:EncryptedParameter>
+      <remv1:StringParameter Name="Privileged Password" Switch="-password" Order="4" />
+    </remv1:EncryptedParameter>
+  </remv1:Action>
+</remv1:Remediation-Plugin>
