@@ -1,9 +1,7 @@
-  #========================================#
-  # LogRhythm -- Security Operations       #
-  # Endpoint Lockdown SmartResponse        #
-  # greg . foss [at] logrhythm . com       #
-  # v0.1  --  April 2016                   #
-  #========================================#
+		LogRhythm Security Operations
+		Endpoint Lockdown SmartResponse
+		greg . foss [at] logrhythm . com
+		v0.1 -- June 2015
 
 ## [Summary]
 
